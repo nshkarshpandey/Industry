@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#btn-1{
+  width: 20%;
+}
+
+#inf{
+  background-color: #f8f9fa;
+}
+
+/* Add this CSS in PracticeAreas.css */
+.custom-arrow-group {
+  position: absolute;
+  top: 58px;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.custom-arrow-group .btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

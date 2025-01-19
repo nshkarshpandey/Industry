@@ -3,10 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
+    "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
+    "jquery": "^3.7.1",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
+    "react-card-slider-component": "^1.0.9",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "react-multi-carousel": "^2.8.5",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^7.1.2",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32"
   }
 }
