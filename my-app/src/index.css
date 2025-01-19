@@ -1,10 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mon{
+  font-family: "Montserrat", serif;
+}
+
+.ser-font{
+  
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ser-txt{
+  color: #050706;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 177.778% */
+}
+
+.ser-para{
+  color: #68737F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.home-font {
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  color: #3E3E3E;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.home-font-1 {
+  color: #616161;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
 }
 
 code {
@@ -14,26 +60,115 @@ code {
 
 #btn-1{
   width: 20%;
+  color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+
+}
+
+#btn-1:hover {
+  background-color: #EB9D00 !important;
+  color: black;
+  box-shadow: 5px 5px;
 }
 
 #inf{
   background-color: #f8f9fa;
 }
 
-/* Add this CSS in PracticeAreas.css */
-.custom-arrow-group {
-  position: absolute;
-  top: 58px;
-  right: 0;
-  display: flex;
-  gap: 10px;
+.navbar-toggler-icon.open {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
 
-.custom-arrow-group .btn {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar-toggler-icon.open::before,
+.navbar-toggler-icon.open::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform-origin: center;
+}
+
+.navbar-toggler-icon.open::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar-toggler-icon.open::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.small-screen-menu {
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1050;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-screen-menu a {
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.small-screen-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+
+#drop{
+  top: 51px;
+  right: 46px;
+  display: block;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #btn-1 {
+      width: 50%;
+    }
+
+  .home-font {
+    font-size: 30px;
+    }
+
+    .home-font-1 {
+      font-size: 15px;
+      line-height: 22px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #btn-1 {
+      width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #btn-1 {
+      width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
 }
