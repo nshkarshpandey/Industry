@@ -261,6 +261,25 @@ background-color: #EB9D00 !important;
     letter-spacing: -0.32px;
 }
 
+.cont-head{
+  color: #000;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cont-para{
+  color: #616161;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #btn-1 {

@@ -19,9 +19,14 @@ const Header = () => {
 
   // Scroll to section
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/home") {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to Home and scroll after the navigation
+      window.location.href = `/home#${sectionId}`;
     }
     setMenuOpen(false); // Close the menu on small screens
   };
@@ -30,6 +35,9 @@ const Header = () => {
   const getNavLinkClass = (path) => {
     return location.pathname === path ? "nav-link fw-bold active" : "nav-link";
   };
+
+  // Check if the current page is the Contact page
+  const isContactPage = location.pathname === "/contact";
 
   return (
     <header>
@@ -71,18 +79,24 @@ const Header = () => {
               >
                 Home
               </Link>
-              <button
-                className="nav-link fw-bold bg-transparent border-0"
-                onClick={() => scrollToSection("about")}
-              >
-                About
-              </button>
-              <button
-                className="nav-link fw-bold bg-transparent border-0"
-                onClick={() => scrollToSection("services")}
-              >
-                Services
-              </button>
+              {!isContactPage && (
+                <>
+                  <button
+                    className="nav-link bg-transparent border-0"
+                    style={{ paddingLeft: "11px" }}
+                    onClick={() => scrollToSection("about")}
+                  >
+                    About
+                  </button>
+                  <button
+                    className="nav-link bg-transparent border-0"
+                    style={{ paddingLeft: "11px" }}
+                    onClick={() => scrollToSection("services")}
+                  >
+                    Services
+                  </button>
+                </>
+              )}
               <Link
                 className={getNavLinkClass("/contact")}
                 to="/contact"
@@ -94,31 +108,41 @@ const Header = () => {
           )}
 
           {/* Normal Links for Larger Screens */}
-          <div className="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+          <div
+            className="collapse navbar-collapse d-none d-lg-flex"
+            id="navbarNav"
+          >
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className={getNavLinkClass("/home")} to="/home">
                   Home
                 </Link>
               </li>
+              {!isContactPage && (
+                <>
+                  <li className="nav-item">
+                    <button
+                      className="nav-link bg-transparent border-0"
+                      onClick={() => scrollToSection("about")}
+                    >
+                      About
+                    </button>
+                  </li>
+                  <li className="nav-item">
+                    <button
+                      className="nav-link bg-transparent border-0"
+                      onClick={() => scrollToSection("services")}
+                    >
+                      Services
+                    </button>
+                  </li>
+                </>
+              )}
               <li className="nav-item">
-                <button
-                  className="nav-link bg-transparent border-0"
-                  onClick={() => scrollToSection("about")}
+                <Link
+                  className={getNavLinkClass("/contact")}
+                  to="/contact"
                 >
-                  About
-                </button>
-              </li>
-              <li className="nav-item">
-                <button
-                  className="nav-link bg-transparent border-0"
-                  onClick={() => scrollToSection("services")}
-                >
-                  Services
-                </button>
-              </li>
-              <li className="nav-item">
-                <Link className={getNavLinkClass("/contact")} to="/contact">
                   Contact
                 </Link>
               </li>
