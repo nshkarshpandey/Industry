@@ -1,79 +1,167 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Sli_img_1 from "../assets/images/prod-1.png";
+import Sli_img_2 from "../assets/images/prod-2.png";
+import Sli_img_3 from "../assets/images/prod-3.png";
+import Sli_img_4 from "../assets/images/prod-4.png";
+import Sli_img_5 from "../assets/images/prod-5.png";
+import Sli_img_6 from "../assets/images/prod-6.png";
+import Button from 'react-bootstrap/Button';
 
 const CardSlider = () => {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 1200 },
-            items: 4
-        },
-        desktop: {
-            breakpoint: { max: 1200, min: 992 },
-            items: 4
-        },
-        tablet: {
-            breakpoint: { max: 992, min: 768 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 768, min: 0 },
-            items: 1
-        }
-    };
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 1200 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 1200, min: 992 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 992, min: 768 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 768, min: 0 },
+      items: 1,
+    },
+  };
 
-    const cards = [
-        {
-            icon: "fa-plane",
-            title: "Immigration Fraud",
-            description: "Immigration fraud includes the offences like using a false or altered document to support a visa application."
-        },
-        {
-            icon: "fa-house",
-            title: "Real Estate",
-            description: "Real estate law deals with legal matters related to the ownership, use, and transfer of land and properties."
-        },
-        {
-            icon: "fa-hand-holding-usd",
-            title: "Banking & Finance",
-            description: "Banking and finance is a diverse field, which primarily leads to sub-areas of disputes even at basic level."
-        },
-        {
-            icon: "fa-sun-plant-wilt",
-            title: "Land Acquisition",
-            description: "Illegal land acquisition refers to the acquisition of land by unlawful means such as through fraud or without the consent of the owner."
-        },
-        {
-            icon: "fa-gavel",
-            title: "Criminal Law",
-            description: "In criminal matters, wide range of crimes fall such as murder, forgery, defamation, economic offences, theft etc."
-        },
-        {
-            icon: "fa-cart-shopping",
-            title: "Consumer Rights",
-            description: "Consumer protection is the practice of safeguarding buyers of goods and services, and the public, against unfair practices in the marketplace."
-        }
-    ];
+  const products = [
+    {
+      image: Sli_img_1,
+      title: "C.V.T (0.5KVA - 20KVA)",
+    },
+    {
+      image: Sli_img_2,
+      title: "Single Phase - Three Phase Panels",
+    },
+    {
+      image: Sli_img_3,
+      title: "Three Phase Distribution Transformer Level 2 (16KVA - 2500KVA)",
+    },
+    {
+      image: Sli_img_4,
+      title: "CT-PT",
+    },
+    {
+      image: Sli_img_5,
+      title: "Automatic Voltage Stabiliser (1KVA - 10KVA)",
+    },
+    {
+      image: Sli_img_6,
+      title: "Servo Voltage Stabiliser (3KVA - 1000KVA)",
+    },
+  ];
 
-    return (
-        <div className="container py-5">
-            <h1 className="mb-4">Our Practice Areas</h1>
-            <Carousel responsive={responsive} infinite={true} className="py-4">
-                {cards.map((card, index) => (
-                    <div key={index} className="card mx-2" style={{ minHeight: '300px' }}>
-                        <div className="card-body text-center">
-                            <div className="icon-box bg-secondary text-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style={{ width: '60px', height: '60px' }}>
-                                <i className={`fa-solid ${card.icon}`} style={{ fontSize: '24px' }}></i>
-                            </div>
-                            <h5 className="card-title">{card.title}</h5>
-                            <p className="card-text">{card.description}</p>
-                        </div>
-                    </div>
-                ))}
-            </Carousel>
-        </div>
-    );
+  const CustomLeftArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="custom-arrow-left sli-arr"
+      style={{
+        position: "absolute",
+        top: "50%",
+        left: "10px",
+        transform: "translateY(-50%)",
+        backgroundColor: "#FFF",
+        border: "none",
+        borderRadius: "20%",
+        width: "40px",
+        height: "40px",
+        boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
+        zIndex: 1000,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+      }}
+    >
+      <i className="fa fa-chevron-left" style={{ color: "#000", fontSize: "16px" }}></i>
+    </button>
+  );
+
+  const CustomRightArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="custom-arrow-right sli-arr"
+      style={{
+        position: "absolute",
+        top: "50%",
+        right: "10px",
+        transform: "translateY(-50%)",
+        backgroundColor: "#FFF",
+        border: "none",
+        borderRadius: "20%",
+        width: "40px",
+        height: "40px",
+        boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.2)",
+        zIndex: 1000,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+      }}
+    >
+      <i className="fa fa-chevron-right" style={{ color: "#000", fontSize: "16px" }}></i>
+    </button>
+  );
+
+  return (
+    <div className="container py-5">
+      <p className="mb-5 sli-head">
+        Our Electrical <span style={{ color: "#EB9D00" }}>Products</span>
+      </p>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        showDots={false}
+        arrows={true}
+        customLeftArrow={<CustomLeftArrow />}
+        customRightArrow={<CustomRightArrow />}
+        swipeable={true}
+        draggable={true}
+        autoPlay={false}
+        slidesToSlide={1}
+      >
+        {products.map((product, index) => (
+          <div key={index} className="card mx-2 position-relative" style={{ border: "none" }}>
+            {/* Image with Overlay */}
+            <div className="image-container position-relative" style={{ overflow: "hidden" }}>
+              <img
+                src={product.image}
+                alt={product.title}
+                className="card-img-top"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <div
+                className="overlay d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100"
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  opacity: 0,
+                  transition: "opacity 0.3s ease",
+                }}
+              >
+                <Button
+                  className="btn btn-light sli-butt"
+                  style={{ borderRadius: "20px", fontWeight: "bold" }}
+                  href="tel:9419140984"
+                >
+                  Enquire Now
+                </Button>
+              </div>
+            </div>
+            <div className="card-body text-center">
+              <h5 className="card-title sli-title">{product.title}</h5>
+            </div>
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  );
 };
 
 export default CardSlider;

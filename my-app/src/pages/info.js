@@ -1,27 +1,28 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../logo.svg';
+import info_img from '../assets/images/about.png';
 
 function Info() {
   return (
     <div>
-      <div className="container-fluid py-5"  id='inf'>
+      <div className=""  id='inf'>
         <div className="row align-items-center">
           {/* Left Side: Image */}
           <div className="col-md-6 d-flex justify-content-center">
             <img
-              src={logo}// Replace with your image path
+              src={info_img}// Replace with your image path
               alt="About Us"
               className="img-fluid"
             />
           </div>
 
           {/* Right Side: Header and Text */}
-          <div className="col-md-6">
-            <h2>About Our Mission</h2>
-            <p>
-              Learn more about our mission to provide exceptional services and solutions.
-              We are dedicated to creating a positive impact for our clients and community.
+          <div className="col-md-6 inf-cont" >
+            <p className='inf-txt'>About Accurate Industries</p>
+            <p className='inf-para'>
+              We specialize in supplying high-quality distribution transformers with ranging 16 KVA to 2500 KVA, catering to various 
+              industrial and commercial needs. All our products are BIS certified, ensuring compliance with the latest safety and 
+              quality regulations.
             </p>
           </div>
         </div>

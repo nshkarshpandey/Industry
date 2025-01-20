@@ -75,7 +75,28 @@ code {
 }
 
 #inf{
-  background-color: #f8f9fa;
+  background-color:#FFEDC9;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.inf-cont{
+padding: 22px 50px !important;
+}
+
+.inf-txt {
+    color: #050706;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.inf-para {
+    color: #050706;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    /* 177.778% */
 }
 
 .navbar-toggler-icon.open {
@@ -133,6 +154,113 @@ code {
   display: block;
 }
 
+.sli-head{
+  color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sli-arr:hover{
+background-color: #EB9D00 !important;
+}
+
+.sli-title{
+    color: #050706;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 28px; */
+    /* 155.556% */
+}
+
+.fif-bg{
+  background-image: url("./assets/images/contact.png");
+}
+
+.fif-txt-1{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fif-para-1{
+  color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+}
+
+.fif-btn{
+    color: #FFF;
+    font-family: Montserrat !important;
+    font-size: 16.66px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 32px !important;
+}
+
+.fif-btn:hover{
+  background-color: #EB9D00 !important;
+  color: #000 !important;
+  box-shadow: 5px 5px #808080;
+
+}
+
+.btm-txt{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.btm-cont-head{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 24.88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btm-cont-para{
+  color: #050706;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 200% */
+    
+}
+
+.image-container:hover .overlay {
+  opacity: 1 !important;
+}
+
+.sli-butt{
+  color: #000;
+    text-align: center;
+  font-family: Montserrat !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 32px !important  ;
+    /* 200% */
+    letter-spacing: -0.32px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #btn-1 {
@@ -146,6 +274,10 @@ code {
     .home-font-1 {
       font-size: 15px;
       line-height: 22px;
+  }
+
+  .home-img{
+    height: 34px !important;
   }
 }
 
