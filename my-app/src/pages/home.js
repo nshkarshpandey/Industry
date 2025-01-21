@@ -21,7 +21,7 @@ const Home = () => {
       >
         <div className="row w-100">
           {/* Left Side: Text and Button */}
-          <div className="col-md-6 d-flex flex-column justify-content-around home-font">
+          <div className="col-md-6 d-flex flex-column home-font">
             <p style={{ }}>
               Enquire Now for <span style={{ color: "#EB9D00" }}>Power</span>{" "}
               Solutions!
@@ -50,9 +50,9 @@ const Home = () => {
               id="home-img-1"
               style={{
                 width: "100%",
-                maxWidth: "350px",
-                alignSelf: "center",
-                marginTop: "20px",
+                maxWidth: "500px",
+                alignSelf: "left",
+                marginTop: "80px",
               }}
             />
           </div>

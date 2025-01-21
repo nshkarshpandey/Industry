@@ -33,10 +33,10 @@ function Contact() {
     // Sending email using EmailJS
     emailjs
       .send(
-        'service_n5ze97m', // Replace with your EmailJS service ID
-        'template_eigujyz', // Replace with your EmailJS template ID
+        'service_d9b37wc', // Replace with your EmailJS service ID
+        'template_j70jglf', // Replace with your EmailJS template ID
         templateParams,
-        'UABXhofYPbTdlpKuf' // Replace with your EmailJS public key
+        'gU60jRdet83OlCBMT' // Replace with your EmailJS public key
       )
       .then(
         (response) => {
