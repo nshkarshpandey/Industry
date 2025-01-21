@@ -3,11 +3,6 @@ import emailjs from 'emailjs-com'; // Import EmailJS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
-const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
 function Fifth() {
   const [email, setEmail] = useState('');
   const [contactNumber, setContactNumber] = useState('');
@@ -26,7 +21,10 @@ function Fifth() {
     // Send email using EmailJS
     emailjs
       .send(
-       serviceID, templateID, templateParams, publicKey
+        'service_n5ze97m', // Replace with your EmailJS service ID
+        'template_is5thzq', // Replace with your EmailJS template ID
+        templateParams,
+        'UABXhofYPbTdlpKuf' // Replace with your EmailJS public key
       )
       .then(
         (response) => {

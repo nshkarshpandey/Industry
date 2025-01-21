@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -280,6 +280,10 @@ background-color: #EB9D00 !important;
     /* 160% */
 }
 
+#home-img-1{
+  width: 200px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #btn-1 {
@@ -298,13 +302,22 @@ background-color: #EB9D00 !important;
   .home-img{
     height: 34px !important;
   }
+
+    .fif-btn {
+      width: 62% !important;
+    }
 }
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #btn-1 {
       width: 50%;
     }
+  .fif-btn {
+    width: 62% !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -312,14 +325,23 @@ background-color: #EB9D00 !important;
   #btn-1 {
       width: 50%;
     }
+         .fif-btn {
+           width: 62% !important;
+         }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .fif-btn {
+      width: 45% !important;
+    }
   
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .fif-btn {
+      width: 45% !important;
+    }
   
 }

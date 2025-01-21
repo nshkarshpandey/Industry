@@ -160,7 +160,7 @@ function Contact() {
     </div>
     <div>
       <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Phone</p>
-      <p style={{ margin: 0, color: '#555' }}>+91 94391-40984</p>
+      <p style={{ margin: 0, color: '#555' }}>+91 94191-40984</p>
     </div>
   </div>
 
@@ -180,10 +180,10 @@ function Contact() {
       <p style={{ margin: 0, color: '#f4a71f', fontWeight: 'bold' }}>Email</p>
       <p style={{ margin: 0, color: '#555' }}>
         <a
-          href="mailto:parveenkohli123@gmail.com"
+          href="mailto:parveenkohli12@gmail.com"
           style={{ textDecoration: 'none', color: '#555' }}
         >
-          parveenkohli123@gmail.com
+          parveenkohli12@gmail.com
         </a>
       </p>
     </div>

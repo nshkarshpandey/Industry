@@ -20,8 +20,8 @@ function Info() {
           <div className="col-md-6 inf-cont" >
             <p className='inf-txt'>About Accurate Industries</p>
             <p className='inf-para'>
-              We specialize in supplying high-quality distribution transformers with ranging 16 KVA to 2500 KVA, catering to various 
-              industrial and commercial needs. All our products are BIS certified, ensuring compliance with the latest safety and 
+              We specialize in supplying high-quality distribution transformers with ranging <span style={{fontWeight:"bold"}}>16 KVA to 2500 KVA</span> , catering to various 
+              industrial and commercial needs. All our products are <span style={{fontWeight:"bold"}}>BIS certified</span>, ensuring compliance with the latest safety and 
               quality regulations.
             </p>
           </div>

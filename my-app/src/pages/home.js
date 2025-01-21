@@ -9,29 +9,52 @@ import Btmnav from "./btmnav";
 import Button from "react-bootstrap/Button";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import numb from "../assets/images/home-img-1.png";
 
 const Home = () => {
   return (
     <div className="container-fluid">
       {/* First Section */}
       <div
-        className="container d-flex align-items-center pt-2"
-        style={{ marginBottom: "35px" }}
+        className="container d-flex align-items-center pt-4"
+        style={{ marginBottom: "50px" }}
       >
         <div className="row w-100">
           {/* Left Side: Text and Button */}
-          <div className="col-md-6 d-flex flex-column justify-content-center home-font">
-            <p>
+          <div className="col-md-6 d-flex flex-column justify-content-around home-font">
+            <p style={{ }}>
               Enquire Now for <span style={{ color: "#EB9D00" }}>Power</span>{" "}
-              solutions!
+              Solutions!
             </p>
-            <p className="home-font-1">
-              Discover our services and offerings designed to meet your needs.
-              We strive to deliver the best experience for our users.
+            <p
+              className="home-font-1"
+              style={{
+                
+              }}
+            >
+              Powering your world with reliable, BIS-certified transformers.
             </p>
-            <Button variant="outline-secondary" id="btn-1" href="tel:9419140984">
+            <Button
+              variant="outline-secondary"
+              id="btn-1"
+              href="tel:9419140984"
+              style={{
+                
+              }}
+            >
               Enquire Now
             </Button>
+            <img
+              src={numb}
+              alt=""
+              id="home-img-1"
+              style={{
+                width: "100%",
+                maxWidth: "350px",
+                alignSelf: "center",
+                marginTop: "20px",
+              }}
+            />
           </div>
 
           {/* Right Side: Image */}
@@ -40,6 +63,7 @@ const Home = () => {
               src={logo} // Replace with your image path
               alt="Welcome"
               className="img-fluid"
+              style={{ maxWidth: "450px", width: "100%" }} // Adjusting the image size
             />
           </div>
         </div>
