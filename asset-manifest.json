@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Industry/static/css/main.1fb1ff04.css",
-    "main.js": "/Industry/static/js/main.41346e75.js",
+    "main.css": "/Industry/static/css/main.bda94fa0.css",
+    "main.js": "/Industry/static/js/main.be42a273.js",
     "static/js/488.feefe78b.chunk.js": "/Industry/static/js/488.feefe78b.chunk.js",
     "static/media/banner.png": "/Industry/static/media/banner.8e0165fa00e73bc828a2.png",
     "static/media/about.png": "/Industry/static/media/about.a3aa3708430ca05396c3.png",
@@ -18,6 +18,7 @@
     "static/media/fa-brands-400.woff2": "/Industry/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/Industry/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/fa-regular-400.woff2": "/Industry/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/home-img-1.png": "/Industry/static/media/home-img-1.4893df57096217315c47.png",
     "static/media/revicons.eot": "/Industry/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/Industry/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/fa-v4compatibility.ttf": "/Industry/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
@@ -28,12 +29,12 @@
     "static/media/slick.ttf": "/Industry/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Industry/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Industry/index.html",
-    "main.1fb1ff04.css.map": "/Industry/static/css/main.1fb1ff04.css.map",
-    "main.41346e75.js.map": "/Industry/static/js/main.41346e75.js.map",
+    "main.bda94fa0.css.map": "/Industry/static/css/main.bda94fa0.css.map",
+    "main.be42a273.js.map": "/Industry/static/js/main.be42a273.js.map",
     "488.feefe78b.chunk.js.map": "/Industry/static/js/488.feefe78b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fb1ff04.css",
-    "static/js/main.41346e75.js"
+    "static/css/main.bda94fa0.css",
+    "static/js/main.be42a273.js"
   ]
 }
